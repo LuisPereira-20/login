@@ -6,18 +6,19 @@
     <title>F1 World</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <div>
+<body class="justify-center items-center">
+    <div class="bg-gray-200 p-10 items-center justify-center rounded-[40px] w-2/3 m-5">
     <form 
     action="registro"
-    class="flex flex-col">
-        <h1>Registrarse</h1>
-        <label for="">Ingresa un nombre de Usuario</label>
-        <input type="text" id="nickname" placeholder="Nickname">
-        <label for="">Ingresa tu correo Electronico</label>
-        <input type="email" id="email" placeholder="ejemplo@gmail.com">
-        <label for="">Ingresa tu contraseña</label>
-        <input type="password" id="password" placeholder="Ingresa contraseña">
+    class="flex flex-col rounded-3xl justify-center text-center items-center">
+        <h1 class="font-bold 3xl text-4xl">Registro</h1>
+        <label class="m-2">Ingresa un nombre de Usuario</label>
+        <input class="p-3" type="text" id="nickname" placeholder="Nickname">
+        <label class="m-2">Ingresa tu correo Electronico</label>
+        <input class="p-3" type="email" id="email" placeholder="ejemplo@gmail.com">
+        <label class="m-2">Ingresa tu contraseña</label>
+        <input class="p-3" type="password" id="password" placeholder="Ingresa contraseña">
+        <button class="bg-red-700 m-5 w-2/5 rounded-full p-3 font-bold text-xl">Registrarse</button>
     </form>
     </div>
 </body>
