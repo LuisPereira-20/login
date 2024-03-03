@@ -5,21 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>F1 World</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/registro.css">
 </head>
 <body class="justify-center items-center">
-    <div class="bg-gray-200 p-10 items-center justify-center rounded-[40px] w-2/3 m-5">
-    <form 
-    action="registro"
-    class="flex flex-col rounded-3xl justify-center text-center items-center">
-        <h1 class="font-bold 3xl text-4xl">Registro</h1>
-        <label class="m-2">Ingresa un nombre de Usuario</label>
-        <input class="p-3" type="text" id="nickname" placeholder="Nickname">
-        <label class="m-2">Ingresa tu correo Electronico</label>
-        <input class="p-3" type="email" id="email" placeholder="ejemplo@gmail.com">
-        <label class="m-2">Ingresa tu contraseña</label>
-        <input class="p-3" type="password" id="password" placeholder="Ingresa contraseña">
-        <button class="bg-red-700 m-5 w-2/5 rounded-full p-3 font-bold text-xl">Registrarse</button>
-    </form>
+    <div class="flex justify-center items-center">
+        <div class=" flex flex-col bg-gray-300 p-10 items-center justify-center rounded-[120px] w-2/3 m-5">
+            <form 
+            action=""
+            class="flex flex-col rounded-3xl justify-center text-center items-center">
+                <h1 class="font-bold 3xl text-4xl">Registro</h1>
+                <label class="m-2">Ingresa un nombre de Usuario</label>
+                <input class="p-3" type="text" id="nickname" placeholder="Nickname">
+                <label class="m-2">Ingresa tu correo Electronico</label>
+                <input class="p-3" type="email" id="email" placeholder="ejemplo@gmail.com">
+                <label class="m-2">Ingresa tu contraseña</label>
+                <input class="p-3" type="password" id="password" placeholder="Ingresa contraseña">
+                <button 
+                class="bg-red-700 m-5 w-3/5 rounded-full p-3 
+                font-bold text-xl hover:text-red-700 hover:bg-black"
+                onclick="saveUser()">Registrarse</button>
+            </form>
+        </div>
     </div>
+    <script src="./usuarios.js"></script>
 </body>
 </html>
